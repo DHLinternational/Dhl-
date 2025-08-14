@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Transit to China</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffcc00; /* DHL yellow */
+        color: #d40511; /* DHL red */
+        text-align: center;
+        padding: 50px;
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .route {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    .progress-container {
+        background-color: #fff4cc;
+        border-radius: 25px;
+        width: 80%;
+        margin: auto;
+        height: 30px;
+        overflow: hidden;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    }
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background-color: #d40511;
+        animation: progressAnim 5s forwards;
+    }
+    @keyframes progressAnim {
+        0% { width: 0%; }
+        100% { width: 80%; }
+    }
+</style>
+</head>
+<body>
+
+<h1>In Transit to China</h1>
+<div class="route">🇧🇪 Belgium → 🇨🇳 China</div>
+<div class="progress-container">
+    <div class="progress-bar"></div>
+</div>
+
+</body>
+</html>
